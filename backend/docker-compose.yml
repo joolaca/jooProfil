@@ -1,7 +1,7 @@
 version: '3.9'
 
 networks:
-  joo_networks:
+  joo-networks:
 
 services:
   server:
@@ -22,7 +22,7 @@ services:
       db_server:
         condition: service_healthy
     networks:
-      - joo_networks
+      - joo-networks
 
 
   db_server:
@@ -44,7 +44,7 @@ services:
       interval: 5s
       retries: 5
     networks:
-      - joo_networks
+      - joo-networks
 
   db_admin:
     image: phpmyadmin/phpmyadmin:5
@@ -59,7 +59,7 @@ services:
     volumes:
       - db_admin_data:/var/www/html
     networks:
-      - joo_networks
+      - joo-networks
 volumes:
   db_data:
   db_admin_data:
