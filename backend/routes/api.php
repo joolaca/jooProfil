@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/hero', function () {
+    return json_encode(['name'=>'hero','title'=> 'hero Title vagyok']);
+});

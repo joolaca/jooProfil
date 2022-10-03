@@ -29,7 +29,7 @@ composer create-project laravel/laravel:8.* backend
 
 
 
-chmod -R 777 jooProfile/storage
+chmod -R 777 storage
 
 
 npm add -D sass
