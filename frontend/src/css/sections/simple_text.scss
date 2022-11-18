@@ -1,0 +1,14 @@
+.simple-text-container{
+
+  h3{
+    color: $color-zeta;
+  }
+
+
+  section{
+    color: $color-delta;
+    padding: 20px 0px;
+    border-bottom: 1px dotted $color-eta;
+    font-weight: bold;
+  }
+}

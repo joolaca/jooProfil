@@ -1,0 +1,27 @@
+.brick-container{
+
+  table{
+    width: 100%;
+
+    thead{
+      text-align: center;
+    }
+
+    tbody{
+      tr:nth-child(even) {background: $color-beta}
+      tr:nth-child(odd) {background: $color-gamma}
+    }
+
+
+    td {
+      padding: 10px;
+      color: $color-alpha;
+
+      p{
+        color: $color-alpha;
+      }
+    }
+  }
+
+}
+

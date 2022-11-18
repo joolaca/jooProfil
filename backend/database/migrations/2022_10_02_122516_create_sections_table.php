@@ -16,10 +16,12 @@ class CreateSectionsTable extends Migration
         Schema::create('sections', function (Blueprint $table) {
             $table->id();
             $table->string('parent_id')->default(0);
+            $table->string('slug')->nullable();
             $table->string('name')->nullable();
             $table->string('image')->nullable();
             $table->string('title')->nullable();
             $table->text('description')->nullable();
+            $table->integer('position')->nullable();
 
         });
     }

@@ -1,0 +1,15 @@
+RewriteEngine On 
+RewriteCond %{REQUEST_URI} !^/backend/public 
+RewriteCond %{HTTP_HOST} ^admin.joofele.hu$ 
+RewriteRule ^(.*)$ /backend/public/$1 [L] 
+
+
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/frontend/build/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /frontend/build/$1
+
+RewriteCond %{HTTP_HOST} ^(www.)?joofele.hu$
+RewriteRule ^(/)?$ frontend/build/index.html [L]

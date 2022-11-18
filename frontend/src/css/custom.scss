@@ -1,0 +1,37 @@
+h2{
+  color: $color-beta;
+}
+p{
+  color: $color-gamma;
+}
+
+.welcome-container{
+  background-color: $color-beta;
+
+
+  .text-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .img-welcome{
+    width: 150px;
+  }
+
+  h1{
+    color: $color-alpha;
+  }
+}
+
+
+.btn-joo{
+  margin: 10px;
+  border: 1px solid $color-eta;
+  color: $color-alpha;
+  background: linear-gradient( 60deg, $color-zeta 5%, $color-eta 95%);
+  box-shadow: 2px 2px 15px rgb(0 0 0 / 40%);
+  border-radius: 4px;
+  font-size: 23px;
+  padding: 5px 15px;
+}
