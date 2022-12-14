@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import htmlParser from 'html-react-parser';
+import {t} from 'i18next';
 
 class Welcome extends Component {
     constructor(props) {
@@ -9,7 +10,6 @@ class Welcome extends Component {
         this.state = {
             data:[],
         };
-
     }
 
     componentDidMount() {
@@ -30,7 +30,7 @@ class Welcome extends Component {
         return(
         <div>
             <div className="container simple-text-container px-4 py-5">
-                <h2 className="pb-2 border-bottom">Magamról {process.env.API_URL}</h2>
+                <h2 className="pb-2 border-bottom">{t('about_me')}</h2>
 
                 <div className="row ">
                     <div className="col-lg-10 mx-auto text-center ">

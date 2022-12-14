@@ -10,26 +10,24 @@ class SectionController extends Controller
     function get(Request $request){
 
         $slug = $request->input('slug');
-        $baseSection = Section::where('slug' , $slug)->first();
+        $baseSection = Section::where('slug' , $slug)
+            ->where('lang', $request->header('lang', 'hu'))
+            ->first();
         return json_encode($baseSection->subSections);
-
     }
 
     function showBaseSection($slug){
         $baseSection = Section::getSubSectionUseSlug($slug);
-
         return view('admin/section/base_section', compact('baseSection'));
     }
 
     function setOrder(Request $request){
-
         $i=0;
         foreach ($request->order as $sectionId) {
             Section::where('id', $sectionId)
                 ->update(['position' => $i++]);
         }
         return $request;
-
     }
 
 
@@ -65,6 +63,7 @@ class SectionController extends Controller
         $request->validate([
             'name' => 'required',
         ]);
+        $request->lang = session('lang', 'hu');
         $section = Section::create($request->all());
 
         return redirect('/section/showBaseSection/'.$section->parent->slug)->with('success', 'Saved');

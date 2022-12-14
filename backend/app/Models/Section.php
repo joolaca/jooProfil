@@ -18,6 +18,8 @@ class Section extends Model
         'image',
         'title',
         'description',
+        'lang',
+        'position',
     ];
 
     public function parent()
@@ -36,9 +38,11 @@ class Section extends Model
         return Section::where('parent_id',0)->get();
     }
 
-
     public static function getSubSectionUseSlug($slug){
-        return Section::where('slug', $slug)->first();
+        return Section::
+            where('slug', $slug)
+            ->where('lang', session('lang', 'hu'))
+            ->first();
     }
 
 }

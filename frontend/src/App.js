@@ -7,7 +7,6 @@ import SimpleText from './components/SimpleText.jsx';
 import Berry from './components/Berry.jsx';
 import Brick from './components/Brick.jsx';
 
-
 function App() {
 
     AOS.init({

@@ -15,6 +15,7 @@
 
     <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/assets/adminkit/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/css/layout.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     @yield('content_css')
 
@@ -46,6 +47,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="{{ asset('admin/js/common.js') }}"></script>
+<script src="{{ asset('admin/js/layout.js') }}"></script>
 
 
 @yield('content_js')

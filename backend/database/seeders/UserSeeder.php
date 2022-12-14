@@ -15,8 +15,8 @@ class UserSeeder extends Seeder
     {
         \App\Models\User::factory()->state([
             'name' => 'admin',
-            'email' => 'admin@admin.com',
-            'password' => bcrypt('adminadmin'),
+            'email' => 'admin@joofele.com',
+            'password' => bcrypt('admin'),
         ])->create();
     }
 }

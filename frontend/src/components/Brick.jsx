@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import htmlParser from 'html-react-parser';
+import {t} from 'i18next';
 
 class Berry extends Component {
     constructor(props) {
@@ -32,13 +33,13 @@ class Berry extends Component {
         return(
         <div>
             <div className="container brick-container px-4 py-5">
-                <h2 className="pb-2 border-bottom">Munkahelyek</h2>
+                <h2 className="pb-2 border-bottom">{t('workplaces')}</h2>
                 <table >
                     <thead>
                     <tr>
-                        <th scope="col">Év</th>
-                        <th scope="col">Név</th>
-                        <th scope="col">Leírás</th>
+                        <th scope="col">{t('year')}</th>
+                        <th scope="col">{t('name')}</th>
+                        <th scope="col">{t('description')}</th>
                     </tr>
                     </thead>
                     <tbody>

@@ -23,8 +23,10 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\Auth\LoginController::class, 'showLoginForm']);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/home', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
 Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
+Route::get('/change-language/{lang?}', [App\Http\Controllers\AdminController::class, 'changeLanguage'])->name('change-language');
 
 
 Route::resource('section', SectionController::class);

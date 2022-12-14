@@ -1,8 +1,0 @@
-RewriteEngine On 
-RewriteCond %{REQUEST_URI} !^/backend/public 
-RewriteCond %{HTTP_HOST} ^admin.joofele.hu$ 
-RewriteRule ^(.*)$ /backend/public/$1 [L] 
-
-
-RewriteEngine On
-RewriteRule ^$ /frontend/build [L]

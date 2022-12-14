@@ -22,6 +22,7 @@ class CreateSectionsTable extends Migration
             $table->string('title')->nullable();
             $table->text('description')->nullable();
             $table->integer('position')->nullable();
+            $table->string('lang', 2)->nullable();
 
         });
     }

@@ -1,0 +1,34 @@
+.welcome-container{
+  background-color: $color-beta;
+  position: relative;
+
+  .text-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .img-welcome{
+    width: 150px;
+  }
+
+  h1{
+    color: $color-alpha;
+  }
+
+  #language-selector{
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border: 1px solid $color-alpha;
+    border-radius: 5px;
+    padding: 5px;
+
+    &:hover{
+      background-color: $color-epsilon;
+    }
+  }
+}
+

@@ -21,4 +21,22 @@ class AdminController extends Controller
         return view('admin/home');
     }
 
+
+    public function changeLanguage($lang = null){
+
+        if(!empty($lang)) {
+            session(['lang' => $lang]);
+            return redirect()->back();
+        }
+
+        if(session('lang', 'hu') == 'hu') {
+            session(['lang' => 'en']);
+        }else{
+            session(['lang' => 'hu']);
+        }
+
+        return redirect()->back();
+
+    }
+
 }

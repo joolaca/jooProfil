@@ -13,31 +13,39 @@ class BrickSeeder extends Seeder
      */
     public function run()
     {
-        $baseSection = \App\Models\Section::factory()->state([
-            'slug' => 'brick-section',
-            'name' => 'Brick section',
-        ])->create();
+        $langs = ['hu', 'en'];
+        foreach ($langs as $lang) {
+            $baseSection = \App\Models\Section::factory()->state([
+                'slug' => 'brick-section',
+                'name' => 'Brick section',
+                'lang' => $lang,
+            ])->create();
 
 
-        \App\Models\Section::factory()->state([
-            'parent_id' => $baseSection->id,
-            'name' => 'company 1',
-            'position' => 1,
-            'title' => '2022',
-        ])->create();
+            \App\Models\Section::factory()->state([
+                'parent_id' => $baseSection->id,
+                'name' => 'company 1',
+                'position' => 1,
+                'title' => '2022',
+                'lang' => $lang,
+            ])->create();
 
-        \App\Models\Section::factory()->state([
-            'parent_id' => $baseSection->id,
-            'name' => 'company 2',
-            'position' => 2,
-            'title' => '2000',
-        ])->create();
+            \App\Models\Section::factory()->state([
+                'parent_id' => $baseSection->id,
+                'name' => 'company 2',
+                'position' => 2,
+                'title' => '2000',
+                'lang' => $lang,
+            ])->create();
 
-        \App\Models\Section::factory()->state([
-            'parent_id' => $baseSection->id,
-            'name' => 'company 3',
-            'position' => 3,
-            'title' => '1980',
-        ])->create();
+            \App\Models\Section::factory()->state([
+                'parent_id' => $baseSection->id,
+                'name' => 'company 3',
+                'position' => 3,
+                'title' => '1980',
+                'lang' => $lang,
+            ])->create();
+        }
+
     }
 }

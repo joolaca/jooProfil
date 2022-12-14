@@ -70,7 +70,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>description:</strong>
+                        <strong>Description:</strong>
                         <textarea class="form-control form-textarea" name="description" placeholder="description">{{ $section->description ?? ''}}</textarea>
                     </div>
                 </div>

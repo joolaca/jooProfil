@@ -13,13 +13,17 @@
                     <i class="align-middle" data-feather="move"></i>
                     {{$section->name}}
                     <span class="action-container">
-                        <a href="{{ route('section.edit', $section->id) }}">
+                        <a href="{{ route('section.edit', $section->id) }}"  class="btn btn-primary">
+                            Edit
                             <i class="align-middle" data-feather="edit"></i>
                         </a>
 
-                        <a onclick="event.preventDefault(); confirm('Delete!') == true ? document.getElementById('destroy_section_{{$section->id}}').submit() : ''">
-                             <i class="align-middle" style="color: red" data-feather="trash-2"></i>
-                        </a>
+                        <button type="button" class="btn btn-danger"
+                                onclick="event.preventDefault(); confirm('Delete!') == true ? document.getElementById('destroy_section_{{$section->id}}').submit() : ''"
+                        >
+                            Delete
+                            <i class="align-middle" data-feather="trash-2"></i>
+                        </button>
 
                         <form id="destroy_section_{{$section->id}}" action="{{ route('section.destroy', ['section' => $section->id]) }}" method="POST">
                             @method('delete')
