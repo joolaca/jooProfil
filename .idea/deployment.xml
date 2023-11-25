@@ -10,6 +10,8 @@
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/frontend/node_modules" />
             <excludedPath local="true" path="$PROJECT_DIR$/backend/node_modules" />
+            <excludedPath local="true" path="$PROJECT_DIR$/backend/.env" />
+            <excludedPath local="true" path="$PROJECT_DIR$/backend/vendor" />
           </excludedPaths>
         </serverdata>
       </paths>

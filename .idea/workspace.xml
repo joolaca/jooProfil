@@ -5,50 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5898c397-534e-42a8-a147-84e0a8fbcfae" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/public/admin/css/layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/public/admin/js/layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/css/sections/welcome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/i18n.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/language/en/translation.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/language/hu/translation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess_torolni" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jooProfil.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jooProfil.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.env_docker" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.env_docker" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/SectionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/SectionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/Section.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Section.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2022_10_02_122516_create_sections_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2022_10_02_122516_create_sections_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/seeders/BrickSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/seeders/BrickSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/seeders/HeroSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/seeders/HeroSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/seeders/SimpleTextSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/seeders/SimpleTextSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/seeders/UserSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/public/admin/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/admin/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/section/base_section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/section/base_section.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/section/create_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/section/create_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/admin_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/admin_layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/nav_top.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/nav_top.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Berry.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Berry.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Brick.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Brick.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/SimpleText.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/SimpleText.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Welcome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Welcome.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/css/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/css/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/css/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/css/custom.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/css/sections/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/css/sections/hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/css/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/css/variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,86 +38,86 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="36">
-                <caret line="2" selection-start-line="2" selection-end-line="2" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="234">
-                <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+              <first_editor relative-caret-position="187">
+                <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="255">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env_rockhost" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/.env_rockhost">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name=".env_docker" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/.env_docker">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name=".env_rockhost" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/.env_rockhost">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/.gitignore">
+      <file leaf-file-name="laravel.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/storage/logs/laravel.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="238">
+              <caret line="14" column="94" selection-start-line="14" selection-start-column="94" selection-end-line="14" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env_docker" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/.env_docker">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/.env">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name=".env_docker" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/.env_docker">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/backend/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="9" selection-start-column="9" selection-end-column="9" />
+            <state relative-caret-position="323">
+              <caret line="19" column="18" selection-end-line="69" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="83" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my.cnf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/docker/db/mariadb/my.cnf">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="site.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/docker/server/apache/sites-enabled/site.conf">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="php.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/docker/server/php/php.ini">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/docker/server/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>form-textarea</find>
       <find>joo_database</find>
       <find>admin@admin.com</find>
       <find>welcome_white.png</find>
@@ -186,6 +147,7 @@
       <find>Egyéb</find>
       <find>.btn-joo</find>
       <find>adminadmin</find>
+      <find>MYSQL_DB</find>
     </findStrings>
     <replaceStrings>
       <replace>joo_networks</replace>
@@ -217,15 +179,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/backend/resources/views/layouts/nav_left.blade.php" />
-        <option value="$PROJECT_DIR$/frontend/src/css/sections/simple_text.scss" />
         <option value="$PROJECT_DIR$/frontend_regi/package.json" />
         <option value="$PROJECT_DIR$/frontend/src/App.jsx" />
         <option value="$PROJECT_DIR$/frontend/package.json" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/backend/.env_docker" />
-        <option value="$PROJECT_DIR$/backend/.env" />
         <option value="$PROJECT_DIR$/frontend/.env_rockhost" />
         <option value="$PROJECT_DIR$/frontend/.env" />
         <option value="$PROJECT_DIR$/frontend/src/components/Hero.jsx" />
@@ -265,9 +223,13 @@
         <option value="$PROJECT_DIR$/frontend/README.md" />
         <option value="$PROJECT_DIR$/frontend/src/components/Berry.jsx" />
         <option value="$PROJECT_DIR$/backend/database/seeders/UserSeeder.php" />
-        <option value="$PROJECT_DIR$/backend/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/backend/.gitignore" />
+        <option value="$PROJECT_DIR$/backend/.env" />
+        <option value="$PROJECT_DIR$/backend/storage/logs/laravel.log" />
+        <option value="$PROJECT_DIR$/backend/config/database.php" />
+        <option value="$PROJECT_DIR$/backend/README.md" />
+        <option value="$PROJECT_DIR$/backend/.env_docker" />
       </list>
     </option>
   </component>
@@ -401,10 +363,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="112" />
-    <option name="width" value="1933" />
-    <option name="height" value="926" />
+    <option name="x" value="-6" />
+    <option name="y" value="106" />
+    <option name="width" value="1922" />
+    <option name="height" value="928" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -412,6 +374,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -424,11 +387,15 @@
               <item name="jooProfil" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="jooProfil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jooProfil" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -438,19 +405,19 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/node_modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/vendor" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\jooProfil\backend" />
       <recent name="C:\workspace\jooProfil" />
       <recent name="C:\workspace\jooProfil\frontend\src\css\sections" />
       <recent name="C:\workspace\jooProfil\frontend" />
       <recent name="C:\workspace\jooProfil\backend" />
-      <recent name="C:\workspace\jooProfil\frontend\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\workspace\jooProfil\frontend\src" />
@@ -539,29 +506,44 @@
       <workItem from="1670922901680" duration="1623000" />
       <workItem from="1670944573945" duration="2058000" />
       <workItem from="1671001388801" duration="5866000" />
+      <workItem from="1700734984131" duration="1304000" />
+      <workItem from="1700746473310" duration="605000" />
+      <workItem from="1700755037676" duration="1181000" />
+      <workItem from="1700756575630" duration="6000" />
+      <workItem from="1700756858195" duration="8000" />
+      <workItem from="1700757113281" duration="217000" />
+      <workItem from="1700757447616" duration="426000" />
+      <workItem from="1700757901194" duration="36000" />
+      <workItem from="1700759577491" duration="1858000" />
+      <workItem from="1700801917860" duration="3209000" />
+      <workItem from="1700810643372" duration="172000" />
+      <workItem from="1700810829013" duration="1464000" />
+      <workItem from="1700812524622" duration="374000" />
+      <workItem from="1700812918495" duration="582000" />
+      <workItem from="1700814663273" duration="3057000" />
+      <workItem from="1700900893903" duration="625000" />
+      <workItem from="1700901538125" duration="325000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205839000" />
+    <option name="totallyTimeSpent" value="221288000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="112" width="1933" height="926" extended-state="0" />
+    <frame x="-6" y="106" width="1922" height="928" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053364" side_tool="true" weight="0.29036295" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="8" weight="0.25634518" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.19065191" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4994664" visible="true" weight="0.24365482" />
-      <window_info anchor="right" id="Remote Host" order="3" weight="0.23331554" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20074746" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4994664" weight="0.38622385" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.23284823" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49848023" visible="true" weight="0.19989507" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32977018" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Structure" order="1" sideWeight="0.50151974" side_tool="true" weight="0.19802494" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TypeScript" order="8" />
@@ -571,10 +553,72 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="File Transfer" order="8" weight="0.25375" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.23293382" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.199062" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32977018" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4994664" visible="true" weight="0.39375" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053364" side_tool="true" weight="0.29036295" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.19125" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.25375" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -585,34 +629,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/reportWebVitals.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/setupTests.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/App.css" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/App.test.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/Http/Controllers/SectionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="13" column="56" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/languages/es.json" />
-    <entry file="file://$PROJECT_DIR$/backend/resources/views/admin/section/create_edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/resources/views/admin/section/base_section.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -708,9 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="26" selection-start-column="7" selection-end-line="3" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -718,9 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -728,9 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,12 +761,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess_torolni">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess_torolni" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/frontend/src/css/custom.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -767,16 +770,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/.env">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/components/Welcome.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -787,9 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="23" column="81" selection-start-line="23" selection-start-column="81" selection-end-line="23" selection-end-column="81" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -803,16 +797,14 @@
     <entry file="file://$PROJECT_DIR$/frontend/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="36">
+          <first_editor relative-caret-position="34">
             <caret line="2" selection-start-line="2" selection-end-line="2" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -822,7 +814,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="255">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
@@ -833,29 +825,76 @@
     <entry file="file://$PROJECT_DIR$/frontend/.env_docker">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="234">
-            <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/.env_rockhost">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/.env_docker">
+    <entry file="file://$PROJECT_DIR$/backend/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/.env_rockhost">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/.gitignore">
+    <entry file="file://$PROJECT_DIR$/backend/docker/db/mariadb/my.cnf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/docker/server/apache/sites-enabled/site.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/docker/server/php/php.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/docker/server/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="255">
+          <caret line="15" column="83" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/storage/logs/laravel.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="94" selection-start-line="14" selection-start-column="94" selection-end-line="14" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="187">
+            <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="18" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/.env_docker">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
         </state>
       </provider>
     </entry>
