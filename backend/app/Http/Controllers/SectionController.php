@@ -86,5 +86,4 @@ class SectionController extends Controller
         return redirect('/section/showBaseSection/'.$section->parent->slug)->with('success', 'Deleted');
     }
 
-
 }
