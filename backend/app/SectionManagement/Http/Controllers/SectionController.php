@@ -1,12 +1,21 @@
 <?php
+declare(strict_types=1);
 
-namespace App\Http\Controllers;
+namespace App\SectionManagement\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use App\Models\Section;
 use Illuminate\Http\Request;
+use App\SectionManagement\Contracts\ISectionService;
 
 class SectionController extends Controller
 {
+    public function __construct(
+        private readonly ISectionService $sectionService
+    )
+    {
+    }
+
     function get(Request $request){
 
         $slug = $request->input('slug');
