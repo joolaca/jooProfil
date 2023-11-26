@@ -1,5 +1,7 @@
 ### clone https://github.com/joolaca/jooProfil.git
 
+#backend
+
 ### rename 
 .env_docker to .env
 
@@ -13,10 +15,9 @@ use the codes inside the backend folder
 
 `docker-compose exec server bash`
 
-`php artisan key:generat`
-`php artisan migrate`
-`php artisan db:seed`
-
+`php artisan key:generat` <br>
+`php artisan migrate` <br>
+`php artisan db:seed` <br>
 
 ## backend login
 

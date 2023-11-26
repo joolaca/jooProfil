@@ -10,7 +10,8 @@ class SectionController extends Controller
     function get(Request $request){
 
         $slug = $request->input('slug');
-        $baseSection = Section::where('slug' , $slug)
+        $baseSection = Section::query()
+            ->where('slug' , $slug)
             ->where('lang', $request->header('lang', 'hu'))
             ->first();
         return json_encode($baseSection->subSections);
@@ -24,7 +25,8 @@ class SectionController extends Controller
     function setOrder(Request $request){
         $i=0;
         foreach ($request->order as $sectionId) {
-            Section::where('id', $sectionId)
+            Section::query()
+                ->where('id', $sectionId)
                 ->update(['position' => $i++]);
         }
         return $request;
@@ -42,9 +44,14 @@ class SectionController extends Controller
     {
         $method = 'POST';
         $title = 'Create';
-        $baseSections = Section::where('parent_id' , 0)->get();
         $previousExplode = explode('/',url()->previous());
+
         $selectedSectionSlug = end($previousExplode);
+        $baseSections = Section::query()
+            ->where('parent_id' , 0)
+            ->where('lang', session('lang', 'hu'))
+            ->get();
+
         return view('admin.section.create_edit', compact('method', 'title', 'baseSections', 'selectedSectionSlug'));
     }
 
@@ -60,11 +67,15 @@ class SectionController extends Controller
 
     public function store(Request $request)
     {
+
         $request->validate([
             'name' => 'required',
         ]);
-        $request->lang = session('lang', 'hu');
-        $section = Section::create($request->all());
+
+        $sectionData = $request->all();
+        $sectionData['lang'] = session('lang', 'hu');
+
+        $section = Section::create($sectionData);
 
         return redirect('/section/showBaseSection/'.$section->parent->slug)->with('success', 'Saved');
     }
