@@ -45,15 +45,11 @@ class Berry extends Component {
                         <tbody>
                         {
                             this.state.data.map((item) => {
-                                let description = "";
-                                if(item.description && item.description.length > 0){
-                                    description = item.description
-                                }
                                 return (
                                     <tr key={item.id}>
                                         <td>{item.title}</td>
                                         <td>{item.name}</td>
-                                        {<td>{htmlParser(description)}</td>}
+                                        {<td>{htmlParser(item.description ?? '')}</td>}
                                     </tr>
                                 )
                             })
