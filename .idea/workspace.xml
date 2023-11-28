@@ -1,22 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/backend/app/Http/Controllers/Auth/LoginController.php" line="28" mnemonic="2" />
     <bookmark url="file://$PROJECT_DIR$/backend/config/app.php" line="163" mnemonic="1" />
   </component>
+  <component name="BookmarksViewState">
+    <option name="rewriteBookmarkType" value="true" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5898c397-534e-42a8-a147-84e0a8fbcfae" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Providers/SectionProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Services/SectionService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Repositories/SectionRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jooProfil.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jooProfil.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/SectionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Http/Controllers/SectionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Models/Section.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Section.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Http/Controllers/SectionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Http/Controllers/SectionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Providers/SectionProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Providers/SectionProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Services/SectionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Services/SectionService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.env" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +34,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/backend/composer.json</pharConfigPath>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -38,9 +49,6 @@
     </option>
     <expand />
     <select />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="jooProfil" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -71,8 +79,8 @@
       <file leaf-file-name="ISectionService.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+            <state relative-caret-position="153">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -276,13 +284,16 @@
       <scroll-view-position x="0" y="0" />
     </layout>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/backend/package.json" />
       <path value="$PROJECT_DIR$/frontend/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="E:\workspace\php\php.exe">
     <include_path>
       <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-ctype" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/event-dispatcher" />
@@ -400,6 +411,7 @@
     <option name="width" value="1925" />
     <option name="height" value="924" />
   </component>
+  <component name="ProjectId" id="2YhobH9VkeHQqHLdN10247iEhqi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -486,20 +498,25 @@
       </pane>
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="web&#9;FILE&#9;file://E:/workspace/jooProfil/backend/routes/web.php&#10;session('lang&#9;ACTION&#9;null&#10;create_edit&#9;FILE&#9;file://E:/workspace/jooProfil/backend/resources/views/admin/section/create_edit.blade.php" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/.env" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "last_opened_file_path": "E:/workspace/jooProfil/backend/storage",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editing.templates",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\workspace\jooProfil\backend\app\SectionManagement\Http\Controllers" />
@@ -516,18 +533,7 @@
       <recent name="C:\workspace\jooProfil\frontend" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -616,6 +622,8 @@
       <workItem from="1700917888793" duration="357000" />
       <workItem from="1700918259201" duration="4314000" />
       <workItem from="1700978041186" duration="3423000" />
+      <workItem from="1700987244939" duration="240000" />
+      <workItem from="1701153662772" duration="5667000" />
     </task>
     <task id="LOCAL-00001" summary="code review">
       <created>1700984341634</created>
@@ -624,15 +632,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700984341634</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="create SOLID structure to Sections">
+      <created>1700986654705</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700986654705</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234374000" />
+    <option name="totallyTimeSpent" value="234662000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="112" width="1925" height="924" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053364" side_tool="true" weight="0.29036295" />
@@ -697,7 +711,7 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -714,39 +728,17 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Fix mobile view&#10;- Fix create method&#10;- Update readme" />
     <MESSAGE value="code review" />
-    <option name="LAST_COMMIT_MESSAGE" value="code review" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
+    <MESSAGE value="create SOLID structure to Sections" />
+    <option name="LAST_COMMIT_MESSAGE" value="create SOLID structure to Sections" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/frontend/src/components/SimpleText.jsx">
@@ -1048,8 +1040,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        <state relative-caret-position="153">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>

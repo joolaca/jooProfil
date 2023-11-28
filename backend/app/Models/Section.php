@@ -4,11 +4,18 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
+/**
+ * Class Section
+ *
+ * @property Section subSections
+ */
 class Section extends Model
 {
     use HasFactory;
     public $timestamps = false;
+
 
     protected $fillable = [
         'id',
@@ -27,7 +34,7 @@ class Section extends Model
         return $this->belongsTo(Section::class, 'parent_id');
     }
 
-    public function subSections()
+    public function subSections(): HasMany
     {
         return $this->hasMany(Section::class, 'parent_id')
             ->orderBy('position');;
@@ -36,13 +43,6 @@ class Section extends Model
 
     public static function getBaseSections(){
         return Section::where('parent_id',0)->get();
-    }
-
-    public static function getSubSectionUseSlug($slug){
-        return Section::
-            where('slug', $slug)
-            ->where('lang', session('lang', 'hu'))
-            ->first();
     }
 
 }

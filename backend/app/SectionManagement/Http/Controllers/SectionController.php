@@ -16,23 +16,24 @@ class SectionController extends Controller
     {
     }
 
-    function get(Request $request){
-
+    function get(Request $request): string
+    {
         $slug = $request->input('slug');
-        $baseSection = Section::query()
-            ->where('slug' , $slug)
-            ->where('lang', $request->header('lang', 'hu'))
-            ->first();
+        $lang = $request->header('lang', 'hu');
+        $baseSection = $this->sectionService->getSectionUseSlugAndLang($slug, $lang);
         return json_encode($baseSection->subSections);
     }
 
-    function showBaseSection($slug){
-        $baseSection = Section::getSubSectionUseSlug($slug);
+    function showBaseSection(string $slug)
+    {
+        $lang = session('lang', 'hu');
+        $baseSection = $this->sectionService->getSectionUseSlugAndLang($slug, $lang);
         return view('admin/section/base_section', compact('baseSection'));
     }
 
-    function setOrder(Request $request){
-        $i=0;
+    function setOrder(Request $request)
+    {
+        $i = 0;
         foreach ($request->order as $sectionId) {
             Section::query()
                 ->where('id', $sectionId)
@@ -46,18 +47,18 @@ class SectionController extends Controller
     {
         $method = 'PUT';
         $title = 'Edit';
-        return view('admin.section.create_edit', compact('section' , 'method', 'title'));
+        return view('admin.section.create_edit', compact('section', 'method', 'title'));
     }
 
     public function create()
     {
         $method = 'POST';
         $title = 'Create';
-        $previousExplode = explode('/',url()->previous());
+        $previousExplode = explode('/', url()->previous());
 
         $selectedSectionSlug = end($previousExplode);
         $baseSections = Section::query()
-            ->where('parent_id' , 0)
+            ->where('parent_id', 0)
             ->where('lang', session('lang', 'hu'))
             ->get();
 
@@ -71,7 +72,7 @@ class SectionController extends Controller
         ]);
 
         $section->update($request->all());
-        return redirect('/section/showBaseSection/'.$section->parent->slug)->with('success', 'Saved');
+        return redirect('/section/showBaseSection/' . $section->parent->slug)->with('success', 'Saved');
     }
 
     public function store(Request $request)
@@ -86,13 +87,13 @@ class SectionController extends Controller
 
         $section = Section::create($sectionData);
 
-        return redirect('/section/showBaseSection/'.$section->parent->slug)->with('success', 'Saved');
+        return redirect('/section/showBaseSection/' . $section->parent->slug)->with('success', 'Saved');
     }
 
     public function destroy(Section $section)
     {
-        $section ->delete();
-        return redirect('/section/showBaseSection/'.$section->parent->slug)->with('success', 'Deleted');
+        $section->delete();
+        return redirect('/section/showBaseSection/' . $section->parent->slug)->with('success', 'Deleted');
     }
 
 }

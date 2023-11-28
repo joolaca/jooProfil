@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\SectionController;
+
+use App\SectionManagement\Http\Controllers\SectionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
