@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import axios from 'axios';
 import htmlParser from 'html-react-parser';
 import {t} from 'i18next';
@@ -8,16 +8,16 @@ class Berry extends Component {
         super(props);
 
         this.state = {
-            data:[],
+            data: [],
         };
 
     }
 
     componentDidMount() {
 
-        const params = { slug: 'brick-section'};
+        const params = {slug: 'brick-section'};
 
-        axios.get('api/section', {params} )
+        axios.get('api/section', {params})
             .then((response) => {
                 this.setState({
                     data: response.data,
@@ -30,33 +30,40 @@ class Berry extends Component {
 
     render() {
 
-        return(
-        <div>
-            <div className="container brick-container px-4 py-5">
-                <h2 className="pb-2 border-bottom">{t('workplaces')}</h2>
-                <table >
-                    <thead>
-                    <tr>
-                        <th scope="col">{t('year')}</th>
-                        <th scope="col">{t('name')}</th>
-                        <th scope="col">{t('description')}</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                        {this.state.data.map((item, index) => {
-                            return (
-                                <tr key={item.id}>
-                                    <td >{item.title}</td>
-                                    <td >{item.name}</td>
-                                    <td >{htmlParser(item.description)}</td>
-                                </tr>
-                            )
-                        })}
-                    </tbody>
-                </table>
+        return (
+            <div>
+                <div className="container brick-container px-4 py-5">
+                    <h2 className="pb-2 border-bottom">{t('workplaces')}</h2>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th scope="col">{t('year')}</th>
+                            <th scope="col">{t('name')}</th>
+                            <th scope="col">{t('description')}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {
+                            this.state.data.map((item) => {
+                                let description = "";
+                                if(item.description && item.description.length > 0){
+                                    description = item.description
+                                }
+                                return (
+                                    <tr key={item.id}>
+                                        <td>{item.title}</td>
+                                        <td>{item.name}</td>
+                                        {<td>{htmlParser(description)}</td>}
+                                    </tr>
+                                )
+                            })
+                        }
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
         )
+
     }
 }
 

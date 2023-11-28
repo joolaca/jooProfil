@@ -11,21 +11,16 @@
     <option name="rewriteBookmarkType" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5898c397-534e-42a8-a147-84e0a8fbcfae" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Repositories/SectionRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+    <list default="true" id="5898c397-534e-42a8-a147-84e0a8fbcfae" name="Default" comment="create SOLID structure to Sections">
+      <change afterPath="$PROJECT_DIR$/.idea/codeception.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jooProfil.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jooProfil.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/Section.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Section.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Http/Controllers/SectionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Http/Controllers/SectionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Providers/SectionProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Providers/SectionProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Services/SectionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Services/SectionService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Brick.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Brick.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -506,31 +501,33 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "E:/workspace/jooProfil/backend/storage",
+    "last_opened_file_path": "C:/workspace/jooProfil/backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "editing.templates",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2023.1.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspace\jooProfil\backend" />
+      <recent name="E:\workspace\jooProfil\backend\app\SectionManagement\Http\Controllers" />
+      <recent name="E:\workspace\jooProfil\backend" />
+      <recent name="C:\workspace\jooProfil" />
+      <recent name="C:\workspace\jooProfil\frontend\src\css\sections" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\workspace\jooProfil\backend\app\SectionManagement\Http\Controllers" />
       <recent name="C:\workspace\jooProfil\frontend\src" />
       <recent name="C:\workspace\jooProfil\backend\public\admin\js" />
       <recent name="C:\workspace\jooProfil\backend\resources\views\layouts" />
       <recent name="C:\workspace\jooProfil\backend\resources\views\admin" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\workspace\jooProfil\backend\app\SectionManagement\Http\Controllers" />
-      <recent name="E:\workspace\jooProfil\backend" />
-      <recent name="C:\workspace\jooProfil" />
-      <recent name="C:\workspace\jooProfil\frontend\src\css\sections" />
-      <recent name="C:\workspace\jooProfil\frontend" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -624,6 +621,8 @@
       <workItem from="1700978041186" duration="3423000" />
       <workItem from="1700987244939" duration="240000" />
       <workItem from="1701153662772" duration="5667000" />
+      <workItem from="1701162010580" duration="97000" />
+      <workItem from="1701162263065" duration="6350000" />
     </task>
     <task id="LOCAL-00001" summary="code review">
       <created>1700984341634</created>
