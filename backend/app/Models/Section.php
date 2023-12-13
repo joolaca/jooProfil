@@ -10,6 +10,16 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * Class Section
  *
  * @property Section subSections
+ * @property Section parent
+ * @property int id
+ * @property int parent_id
+ * @property string slug
+ * @property string name
+ * @property string image
+ * @property string title
+ * @property string description
+ * @property string lang
+ * @property int position
  */
 class Section extends Model
 {
@@ -37,7 +47,7 @@ class Section extends Model
     public function subSections(): HasMany
     {
         return $this->hasMany(Section::class, 'parent_id')
-            ->orderBy('position');;
+            ->orderBy('position');
     }
 
 

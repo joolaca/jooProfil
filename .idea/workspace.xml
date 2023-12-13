@@ -11,14 +11,21 @@
     <option name="rewriteBookmarkType" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5898c397-534e-42a8-a147-84e0a8fbcfae" name="Default" comment="use The coalesce operator">
-      <change beforePath="$PROJECT_DIR$/.idea/jooProfil.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jooProfil.iml" afterDir="false" />
+    <list default="true" id="5898c397-534e-42a8-a147-84e0a8fbcfae" name="Default" comment="create SectionDtoFactory&#10;&#10;create HeroSectionDto,BrickSectionDto,SimpleTextSectionDto&#10;&#10;create Localization Middleware">
+      <change afterPath="$PROJECT_DIR$/backend/app/Http/Middleware/Localization.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionDto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Dtos/BrickSectionDto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Dtos/HeroSectionDto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Dtos/SimpleTextSectionDto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Services/SectionDtoFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/resources/lang/en/admin/section.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/resources/lang/hu/admin/section.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Models/Section.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Section.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Http/Controllers/SectionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Http/Controllers/SectionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Repositories/SectionRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Repositories/SectionRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Services/SectionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Services/SectionService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/section/create_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/section/create_edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -621,7 +628,7 @@
       <workItem from="1701153662772" duration="5667000" />
       <workItem from="1701162010580" duration="97000" />
       <workItem from="1701162263065" duration="7578000" />
-      <workItem from="1702453852256" duration="2292000" />
+      <workItem from="1702453852256" duration="13998000" />
     </task>
     <task id="LOCAL-00001" summary="code review">
       <created>1700984341634</created>
@@ -653,7 +660,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701169303138</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="make functions: getBaseSectionsUseLang, setSectionPosition">
+      <option name="closed" value="true" />
+      <created>1702456413806</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702456413806</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -754,7 +769,9 @@
     <MESSAGE value="create SOLID structure to Sections" />
     <MESSAGE value="Fix if htmlParser function get NULL throw error&#10;add script --openssl-legacy-provider" />
     <MESSAGE value="use The coalesce operator" />
-    <option name="LAST_COMMIT_MESSAGE" value="use The coalesce operator" />
+    <MESSAGE value="make functions: getBaseSectionsUseLang, setSectionPosition" />
+    <MESSAGE value="create SectionDtoFactory&#10;&#10;create HeroSectionDto,BrickSectionDto,SimpleTextSectionDto&#10;&#10;create Localization Middleware" />
+    <option name="LAST_COMMIT_MESSAGE" value="create SectionDtoFactory&#10;&#10;create HeroSectionDto,BrickSectionDto,SimpleTextSectionDto&#10;&#10;create Localization Middleware" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/frontend/src/components/SimpleText.jsx">

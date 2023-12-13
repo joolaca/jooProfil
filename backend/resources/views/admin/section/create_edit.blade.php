@@ -27,20 +27,23 @@
         @endif
 
 
-        <form action="{{ isset($section) ? route('section.update',$section->id) :  route('section.store') }}" method="POST">
+        <form action="{{ isset($section) ? route('section.update',$section->id) :  route('section.store') }}"
+              method="POST">
 
             @csrf
             <input type="hidden" name="_method" value="{{$method}}">
 
 
             <div class="row">
+
                 @if($method == 'POST')
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <strong>Base Section</strong>
-                            <select name="parent_id" class="form-control">
+                            <label for="baseSectionSelect">Base Section</label>
+
+                            <select name="parent_id" class="form-control" id="baseSectionSelect">
                                 @foreach($baseSections as $baseSection)
-                                    @if($selectedSectionSlug === $baseSection->slug)
+                                    @if($slug === $baseSection->slug)
                                         <option selected value="{{$baseSection->id}}">{{$baseSection->name}}</option>
                                     @else
                                         <option value="{{$baseSection->id}}">{{$baseSection->name}}</option>
@@ -50,30 +53,48 @@
                         </div>
                     </div>
                 @endif
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Name:</strong>
-                        <input type="text" name="name" value="{{ $section->name ?? ''}}" class="form-control" placeholder="Name">
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Image:</strong>
-                        <input type="text" name="image" value="{{ $section->image ?? ''}}" class="form-control" placeholder="Image">
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Title:</strong>
-                        <input type="text" name="title" value="{{ $section->title ?? ''}}" class="form-control" placeholder="Title">
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Description:</strong>
-                        <textarea class="form-control form-textarea" name="description" placeholder="description">{{ $section->description ?? ''}}</textarea>
-                    </div>
-                </div>
+
+                @foreach($sectionDto->getEditableAttribute() as $attribute)
+
+                    @if($attribute['display'] === 'hidden')
+                        <input type="hidden"
+                               name="{{ $attribute['column'] }}"
+                               value="{{ $section->{$attribute['column']} ?? ''}}"
+                        >
+                    @endif
+
+                    @if($attribute['display'] === 'text')
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <label for="{{ $attribute['column'] }}">{{ $attribute['title'] ?? '' }} :</label>
+
+                                <input type="text"
+                                       id="{{ $attribute['column'] }}"
+                                       name="{{ $attribute['column'] }}"
+                                       value="{{ $section->{$attribute['column']} ?? ''}}"
+                                       class="form-control"
+                                       placeholder="{{ $attribute['title'] }}">
+                            </div>
+                        </div>
+                    @endif
+
+                    @if($attribute['display'] === 'textarea')
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <strong>{{ $attribute['title'] ?? '' }} :</strong>
+
+                                <textarea type="text"
+                                          name="{{ $attribute['column'] }}"
+                                          class="form-control form-textarea"
+                                          placeholder="{{ $attribute['title'] }}"
+                                >{{ $section->{$attribute['column']} ?? ''}}</textarea>
+
+                            </div>
+                        </div>
+                    @endif
+
+                @endforeach
+
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
@@ -89,10 +110,10 @@
 
     <script>
         ClassicEditor
-            .create( document.querySelector( '.form-textarea' ) )
-            .catch( error => {
-                console.error( error );
-            } );
+            .create(document.querySelector('.form-textarea'))
+            .catch(error => {
+                console.error(error);
+            });
     </script>
 @endsection
 

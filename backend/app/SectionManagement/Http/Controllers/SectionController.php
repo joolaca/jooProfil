@@ -5,13 +5,16 @@ namespace App\SectionManagement\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Section;
+use App\SectionManagement\Services\SectionDtoFactory;
 use Illuminate\Http\Request;
 use App\SectionManagement\Contracts\ISectionService;
+use Illuminate\Support\Facades\App;
 
 class SectionController extends Controller
 {
     public function __construct(
-        private readonly ISectionService $sectionService
+        private readonly ISectionService   $sectionService,
+        private readonly SectionDtoFactory $sectionDtoFactory
     )
     {
     }
@@ -35,7 +38,7 @@ class SectionController extends Controller
     {
         $i = 0;
         foreach ($request->get('order') as $sectionId) {
-            $this->sectionService->setSectionPosition((int) $sectionId, $i++);
+            $this->sectionService->setSectionPosition((int)$sectionId, $i++);
         }
         return $request;
     }
@@ -45,7 +48,17 @@ class SectionController extends Controller
     {
         $method = 'PUT';
         $title = 'Edit';
-        return view('admin.section.create_edit', compact('section', 'method', 'title'));
+
+        $slug = $section->parent->slug;
+        $sectionDto = $this->sectionDtoFactory->getSectionDtoUseSlug($slug);
+
+        return view('admin.section.create_edit',
+            compact(
+                'sectionDto',
+                'section',
+                'method',
+                'title')
+        );
     }
 
     public function create()
@@ -54,15 +67,17 @@ class SectionController extends Controller
         $title = 'Create';
         $previousExplode = explode('/', url()->previous());
 
-        $selectedSectionSlug = end($previousExplode);
-
+        $slug = end($previousExplode);
+        $sectionDto = $this->sectionDtoFactory->getSectionDtoUseSlug($slug);
         $baseSections = $this->sectionService->getBaseSectionsUseLang(session('lang', 'hu'));
 
         return view('admin.section.create_edit',
-            compact('method',
-                'title',
+            compact(
+                'sectionDto',
+                'method',
+                'slug',
                 'baseSections',
-                'selectedSectionSlug')
+                'title')
         );
     }
 

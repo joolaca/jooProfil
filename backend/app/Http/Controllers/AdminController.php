@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class AdminController extends Controller
 {
@@ -22,16 +22,17 @@ class AdminController extends Controller
     }
 
 
-    public function changeLanguage($lang = null){
+    public function changeLanguage($lang = null)
+    {
 
-        if(!empty($lang)) {
+        if (!empty($lang)) {
             session(['lang' => $lang]);
             return redirect()->back();
         }
 
-        if(session('lang', 'hu') == 'hu') {
+        if (session('lang', 'hu') == 'hu') {
             session(['lang' => 'en']);
-        }else{
+        } else {
             session(['lang' => 'hu']);
         }
 
