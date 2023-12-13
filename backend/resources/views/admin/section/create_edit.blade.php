@@ -81,9 +81,10 @@
                     @if($attribute['display'] === 'textarea')
                         <div class="col-xs-12 col-sm-12 col-md-12">
                             <div class="form-group">
-                                <strong>{{ $attribute['title'] ?? '' }} :</strong>
+                                <label for="{{ $attribute['column'] }}">{{ $attribute['title'] ?? '' }} :</label>
 
                                 <textarea type="text"
+                                          id="{{ $attribute['column'] }}"
                                           name="{{ $attribute['column'] }}"
                                           class="form-control form-textarea"
                                           placeholder="{{ $attribute['title'] }}"
