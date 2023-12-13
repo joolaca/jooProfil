@@ -11,9 +11,14 @@
     <option name="rewriteBookmarkType" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5898c397-534e-42a8-a147-84e0a8fbcfae" name="Default" comment="Fix if htmlParser function get NULL throw error&#10;add script --openssl-legacy-provider">
+    <list default="true" id="5898c397-534e-42a8-a147-84e0a8fbcfae" name="Default" comment="use The coalesce operator">
+      <change beforePath="$PROJECT_DIR$/.idea/jooProfil.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jooProfil.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Brick.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Brick.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Http/Controllers/SectionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Http/Controllers/SectionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Repositories/SectionRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Repositories/SectionRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Services/SectionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Services/SectionService.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -490,23 +495,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "C:/workspace/jooProfil/backend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editing.templates",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2023.1.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/workspace/jooProfil/backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PhpStorm 2023.1.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\workspace\jooProfil\backend" />
@@ -615,7 +620,8 @@
       <workItem from="1700987244939" duration="240000" />
       <workItem from="1701153662772" duration="5667000" />
       <workItem from="1701162010580" duration="97000" />
-      <workItem from="1701162263065" duration="6893000" />
+      <workItem from="1701162263065" duration="7578000" />
+      <workItem from="1702453852256" duration="2292000" />
     </task>
     <task id="LOCAL-00001" summary="code review">
       <created>1700984341634</created>
@@ -639,7 +645,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701168905793</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="use The coalesce operator">
+      <option name="closed" value="true" />
+      <created>1701169303138</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701169303138</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -739,7 +753,8 @@
     <MESSAGE value="code review" />
     <MESSAGE value="create SOLID structure to Sections" />
     <MESSAGE value="Fix if htmlParser function get NULL throw error&#10;add script --openssl-legacy-provider" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix if htmlParser function get NULL throw error&#10;add script --openssl-legacy-provider" />
+    <MESSAGE value="use The coalesce operator" />
+    <option name="LAST_COMMIT_MESSAGE" value="use The coalesce operator" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/frontend/src/components/SimpleText.jsx">

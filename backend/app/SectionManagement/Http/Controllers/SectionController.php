@@ -34,10 +34,8 @@ class SectionController extends Controller
     function setOrder(Request $request)
     {
         $i = 0;
-        foreach ($request->order as $sectionId) {
-            Section::query()
-                ->where('id', $sectionId)
-                ->update(['position' => $i++]);
+        foreach ($request->get('order') as $sectionId) {
+            $this->sectionService->setSectionPosition((int) $sectionId, $i++);
         }
         return $request;
     }
@@ -57,12 +55,15 @@ class SectionController extends Controller
         $previousExplode = explode('/', url()->previous());
 
         $selectedSectionSlug = end($previousExplode);
-        $baseSections = Section::query()
-            ->where('parent_id', 0)
-            ->where('lang', session('lang', 'hu'))
-            ->get();
 
-        return view('admin.section.create_edit', compact('method', 'title', 'baseSections', 'selectedSectionSlug'));
+        $baseSections = $this->sectionService->getBaseSectionsUseLang(session('lang', 'hu'));
+
+        return view('admin.section.create_edit',
+            compact('method',
+                'title',
+                'baseSections',
+                'selectedSectionSlug')
+        );
     }
 
     public function update(Request $request, Section $section)
