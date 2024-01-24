@@ -11,7 +11,7 @@ use Mockery;
 use Tests\TestCase;
 use Illuminate\Support\Str;
 
-class SectionServiceTest extends TestCase
+class GetSectionUseSlugAndLangTest extends TestCase
 {
     /**
      * @dataProvider sectionTestDatas

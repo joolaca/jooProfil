@@ -11,19 +11,8 @@
     <option name="rewriteBookmarkType" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5898c397-534e-42a8-a147-84e0a8fbcfae" name="Default" comment="create SectionDtoFactory&#10;&#10;create HeroSectionDto,BrickSectionDto,SimpleTextSectionDto&#10;&#10;create Localization Middleware">
-      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tests/SectionManagement/SectionServiceTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jooProfil.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jooProfil.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.lock" afterDir="false" />
+    <list default="true" id="5898c397-534e-42a8-a147-84e0a8fbcfae" name="Default" comment="create SectionServiceTest&#10;create test_getSectionUseSlugAndLang function">
+      <change beforePath="$PROJECT_DIR$/backend/tests/SectionManagement/SectionServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/SectionManagement/GetSectionUseSlugAndLangTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -537,7 +526,7 @@
   </component>
   <component name="RunManager">
     <configuration name="SectionServiceTest.test_getSectionUseSlugAndLang" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\SectionManagement\SectionServiceTest" file="$PROJECT_DIR$/backend/tests/SectionManagement/SectionServiceTest.php" method="test_getSectionUseSlugAndLang" scope="Method" />
+      <TestRunner class="Tests\SectionManagement\SectionServiceTest" file="$PROJECT_DIR$/backend/tests/SectionManagement/GetSectionUseSlugAndLangTest.php" method="test_getSectionUseSlugAndLang" scope="Method" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -641,7 +630,7 @@
       <workItem from="1701162263065" duration="7578000" />
       <workItem from="1702453852256" duration="14655000" />
       <workItem from="1704885674332" duration="4000" />
-      <workItem from="1706086830676" duration="5520000" />
+      <workItem from="1706086830676" duration="6366000" />
     </task>
     <task id="LOCAL-00001" summary="code review">
       <created>1700984341634</created>
@@ -697,7 +686,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702477235138</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="create SectionServiceTest&#10;create test_getSectionUseSlugAndLang function">
+      <option name="closed" value="true" />
+      <created>1706098077933</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706098077933</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -800,7 +797,8 @@
     <MESSAGE value="use The coalesce operator" />
     <MESSAGE value="make functions: getBaseSectionsUseLang, setSectionPosition" />
     <MESSAGE value="create SectionDtoFactory&#10;&#10;create HeroSectionDto,BrickSectionDto,SimpleTextSectionDto&#10;&#10;create Localization Middleware" />
-    <option name="LAST_COMMIT_MESSAGE" value="create SectionDtoFactory&#10;&#10;create HeroSectionDto,BrickSectionDto,SimpleTextSectionDto&#10;&#10;create Localization Middleware" />
+    <MESSAGE value="create SectionServiceTest&#10;create test_getSectionUseSlugAndLang function" />
+    <option name="LAST_COMMIT_MESSAGE" value="create SectionServiceTest&#10;create test_getSectionUseSlugAndLang function" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/frontend/src/components/SimpleText.jsx">
