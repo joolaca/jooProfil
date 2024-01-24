@@ -12,20 +12,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5898c397-534e-42a8-a147-84e0a8fbcfae" name="Default" comment="create SectionDtoFactory&#10;&#10;create HeroSectionDto,BrickSectionDto,SimpleTextSectionDto&#10;&#10;create Localization Middleware">
-      <change afterPath="$PROJECT_DIR$/backend/app/Http/Middleware/Localization.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionDto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Dtos/BrickSectionDto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Dtos/HeroSectionDto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Dtos/SimpleTextSectionDto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Services/SectionDtoFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/resources/lang/en/admin/section.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/resources/lang/hu/admin/section.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tests/SectionManagement/SectionServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jooProfil.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jooProfil.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/Section.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Section.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Http/Controllers/SectionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Http/Controllers/SectionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/section/create_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/section/create_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/SectionManagement/Contracts/ISectionRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,7 +301,6 @@
       <path value="$PROJECT_DIR$/backend/vendor/symfony/css-selector" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/routing" />
       <path value="$PROJECT_DIR$/backend/vendor/facade/ignition-contracts" />
-      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-php81" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-intl-idn" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/http-kernel" />
@@ -403,6 +400,9 @@
       <path value="$PROJECT_DIR$/backend/vendor/symfony/finder" />
       <path value="$PROJECT_DIR$/backend/vendor/composer" />
       <path value="$PROJECT_DIR$/backend/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/backend/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/backend/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/yaml" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
@@ -502,23 +502,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/workspace/jooProfil/backend&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PhpStorm 2023.1.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "last_opened_file_path": "C:/workspace/jooProfil/.phpunit.result.cache",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "web.server",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2023.1.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\workspace\jooProfil\backend" />
@@ -534,6 +534,17 @@
       <recent name="C:\workspace\jooProfil\backend\resources\views\layouts" />
       <recent name="C:\workspace\jooProfil\backend\resources\views\admin" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SectionServiceTest.test_getSectionUseSlugAndLang" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\SectionManagement\SectionServiceTest" file="$PROJECT_DIR$/backend/tests/SectionManagement/SectionServiceTest.php" method="test_getSectionUseSlugAndLang" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.SectionServiceTest.test_getSectionUseSlugAndLang" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -628,7 +639,9 @@
       <workItem from="1701153662772" duration="5667000" />
       <workItem from="1701162010580" duration="97000" />
       <workItem from="1701162263065" duration="7578000" />
-      <workItem from="1702453852256" duration="13998000" />
+      <workItem from="1702453852256" duration="14655000" />
+      <workItem from="1704885674332" duration="4000" />
+      <workItem from="1706086830676" duration="5520000" />
     </task>
     <task id="LOCAL-00001" summary="code review">
       <created>1700984341634</created>
@@ -668,7 +681,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702456413806</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="create SectionDtoFactory&#10;&#10;create HeroSectionDto,BrickSectionDto,SimpleTextSectionDto&#10;&#10;create Localization Middleware">
+      <option name="closed" value="true" />
+      <created>1702477180872</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702477180872</updated>
+    </task>
+    <task id="LOCAL-00007" summary="create SectionDtoFactory&#10;&#10;create HeroSectionDto,BrickSectionDto,SimpleTextSectionDto&#10;&#10;create Localization Middleware">
+      <option name="closed" value="true" />
+      <created>1702477235138</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702477235138</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">

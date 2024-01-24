@@ -9,6 +9,5 @@ interface ISectionRepository
 {
     public function getSectionUseSlugAndLang(string $slug, string $lang): Section;
     public function getBaseSectionsUseLang(string $lang): Collection;
-
     public function setSectionPosition(int $sectionId, int $position): void;
 }

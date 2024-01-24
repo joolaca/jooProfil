@@ -14,3 +14,4 @@ yarn-error.log
 /.idea
 /.vscode
 .env_rockhost
+/bootstrap/cache/
