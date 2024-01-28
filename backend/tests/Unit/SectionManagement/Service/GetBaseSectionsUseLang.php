@@ -15,8 +15,10 @@ use Illuminate\Support\Collection as SupportCollection;
 class GetBaseSectionsUseLang extends TestCase
 {
     private SectionRepository $mockSectionRepository;
+    private SectionService $mockSectionService;
     private SupportCollection $huLangBaseSections;
     private SupportCollection $enLangBaseSections;
+
 
     public function __construct(?string $name = null, array $data = [], $dataName = '')
     {
@@ -24,59 +26,74 @@ class GetBaseSectionsUseLang extends TestCase
         $this->mockSectionRepository = Mockery::mock(SectionRepository::class);
         $this->mockSectionRepository->makePartial();
 
-        $this->huLangBaseSections = collect([
-            [
-                'lang' => 'hu',
-                'name' => Str::random(),
-            ],
-            [
-                'lang' => 'hu',
-                'name' => Str::random(),
-            ],
-            [
-                'lang' => 'hu',
-                'name' => Str::random(),
-            ],
-        ]);
-        $this->enLangBaseSections = collect([
-            [
-                'lang' => 'en',
-                'name' => Str::random(),
-            ],
-            [
-                'lang' => 'en',
-                'name' => Str::random(),
-            ],
-        ]);
+        $this->huLangBaseSections = collect($this->makeBaseSectionData(3, 'hu'));
+        $this->enLangBaseSections = collect($this->makeBaseSectionData(5, 'en'));
+    }
+
+    private function makeBaseSectionData(
+        int    $quantity = 1,
+        string $lang = 'hu'
+    ): array
+    {
+        $baseSectionData = [];
+        for ($i = 0; $i < $quantity; $i++) {
+            $baseSectionData[] =
+                [
+                    'lang' => $lang,
+                    'name' => Str::random(),
+                    'slug' => Str::random(),
+                    'image' => Str::random(),
+                    'title' => Str::random(),
+                    'description' => Str::random(),
+                    'position' => rand(0, 10),
+                ];
+        }
+        return $baseSectionData;
     }
 
     public function test_getBaseSectionsUseLang()
     {
-
         $this->addCollectionToMockSectionRepository('hu', $this->huLangBaseSections);
         $this->addCollectionToMockSectionRepository('en', $this->enLangBaseSections);
 
-        $mockSectionService = Mockery::mock(SectionService::class, [
+        $this->mockSectionService = Mockery::mock(SectionService::class, [
             $this->mockSectionRepository
         ]);
-        $mockSectionService->makePartial();
+        $this->mockSectionService->makePartial();
 
-        $huTestCollection = $mockSectionService->getBaseSectionsUseLang('hu');
-        foreach ($this->huLangBaseSections as $huLangBaseSection) {
-            $element = $huTestCollection->where('name', '=', $huLangBaseSection['name']);
-            $this->assertNotEmpty($element, 'Missing section element');
-        }
-
-        $enTestCollection = $mockSectionService->getBaseSectionsUseLang('en');
-        foreach ($this->enLangBaseSections as $enLangBaseSection) {
-            $element = $enTestCollection->where('name', '=', $enLangBaseSection['name']);
-            $this->assertNotEmpty($element, 'Missing section element');
-        }
+        $this->makeAssertion('hu');
+        $this->makeAssertion('en');
 
     }
 
+    private function makeAssertion(
+        $lang = 'hu'
+    ): void
+    {
+        $originalLanguageDependentBaseSectionsData = $lang . 'LangBaseSections';
+        $testCollection = $this->mockSectionService->getBaseSectionsUseLang($lang);
+
+        foreach ($this->{$originalLanguageDependentBaseSectionsData} as $langBaseSection) {
+            $this->checkFieldName('name', $testCollection, $langBaseSection);
+            $this->checkFieldName('slug', $testCollection, $langBaseSection);
+            $this->checkFieldName('image', $testCollection, $langBaseSection);
+            $this->checkFieldName('title', $testCollection, $langBaseSection);
+            $this->checkFieldName('description', $testCollection, $langBaseSection);
+        }
+    }
+
+    private function checkFieldName(
+        string             $fieldName,
+        EloquentCollection $testCollection,
+        array  $langBaseSection
+    )
+    {
+        $element = $testCollection->where($fieldName, '=', $langBaseSection[$fieldName]);
+        $this->assertNotEmpty($element, 'Missing section element. checkFieldName: ' . $fieldName);
+    }
+
     private function addCollectionToMockSectionRepository(
-        string $lang,
+        string            $lang,
         SupportCollection $sectionsData
     ): void
     {

@@ -11,12 +11,9 @@
     <option name="rewriteBookmarkType" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5898c397-534e-42a8-a147-84e0a8fbcfae" name="Default" comment="rename GetSectionUseSlugAndLangTest">
-      <change afterPath="$PROJECT_DIR$/backend/tests/Unit/SectionManagement/Service/GetBaseSectionsUseLang.php" afterDir="false" />
+    <list default="true" id="5898c397-534e-42a8-a147-84e0a8fbcfae" name="Default" comment="create test_getBaseSectionsUseLang">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/tests/Feature/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/tests/SectionManagement/GetSectionUseSlugAndLangTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/Unit/SectionManagement/Service/GetSectionUseSlugAndLangTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/tests/Unit/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/Unit/SectionManagement/Service/GetBaseSectionsUseLang.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/Unit/SectionManagement/Service/GetBaseSectionsUseLang.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -656,7 +653,7 @@
       <workItem from="1704885674332" duration="4000" />
       <workItem from="1706086830676" duration="8328000" />
       <workItem from="1706162365990" duration="11025000" />
-      <workItem from="1706449693118" duration="2182000" />
+      <workItem from="1706449693118" duration="5349000" />
     </task>
     <task id="LOCAL-00001" summary="code review">
       <created>1700984341634</created>
@@ -728,7 +725,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706098240516</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="create test_getBaseSectionsUseLang">
+      <option name="closed" value="true" />
+      <created>1706451948496</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1706451948496</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -833,7 +838,8 @@
     <MESSAGE value="create SectionDtoFactory&#10;&#10;create HeroSectionDto,BrickSectionDto,SimpleTextSectionDto&#10;&#10;create Localization Middleware" />
     <MESSAGE value="create SectionServiceTest&#10;create test_getSectionUseSlugAndLang function" />
     <MESSAGE value="rename GetSectionUseSlugAndLangTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename GetSectionUseSlugAndLangTest" />
+    <MESSAGE value="create test_getBaseSectionsUseLang" />
+    <option name="LAST_COMMIT_MESSAGE" value="create test_getBaseSectionsUseLang" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/frontend/src/components/SimpleText.jsx">
