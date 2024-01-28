@@ -11,8 +11,12 @@
     <option name="rewriteBookmarkType" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5898c397-534e-42a8-a147-84e0a8fbcfae" name="Default" comment="create SectionServiceTest&#10;create test_getSectionUseSlugAndLang function">
-      <change beforePath="$PROJECT_DIR$/backend/tests/SectionManagement/SectionServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/SectionManagement/GetSectionUseSlugAndLangTest.php" afterDir="false" />
+    <list default="true" id="5898c397-534e-42a8-a147-84e0a8fbcfae" name="Default" comment="rename GetSectionUseSlugAndLangTest">
+      <change afterPath="$PROJECT_DIR$/backend/tests/Unit/SectionManagement/Service/GetBaseSectionsUseLang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/SectionManagement/GetSectionUseSlugAndLangTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/Unit/SectionManagement/Service/GetSectionUseSlugAndLangTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/Unit/ExampleTest.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -491,23 +495,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "C:/workspace/jooProfil/.phpunit.result.cache",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "web.server",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2023.1.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/workspace/jooProfil/.phpunit.result.cache&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;web.server&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PhpStorm 2023.1.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\workspace\jooProfil\backend" />
@@ -524,13 +528,33 @@
       <recent name="C:\workspace\jooProfil\backend\resources\views\admin" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.GetBaseSectionsUseLang.test_getBaseSectionsUseLang (1)">
+    <configuration name="GetBaseSectionsUseLang.test_getBaseSectionsUseLang (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="SectionManagement\Service\GetBaseSectionsUseLang" file="$PROJECT_DIR$/backend/tests/Unit/SectionManagement/Service/GetBaseSectionsUseLang.php" method="test_getBaseSectionsUseLang" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GetBaseSectionsUseLang.test_getBaseSectionsUseLang" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="SectionManagement\GetBaseSectionsUseLang" file="$PROJECT_DIR$/backend/tests/Unit/SectionManagement/GetBaseSectionsUseLang.php" method="test_getBaseSectionsUseLang" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GetSectionUseSlugAndLangTest.test_getSectionUseSlugAndLang (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\SectionManagement\GetSectionUseSlugAndLangTest" file="$PROJECT_DIR$/backend/tests/Unit/SectionManagement/GetSectionUseSlugAndLangTest.php" method="test_getSectionUseSlugAndLang" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GetSectionUseSlugAndLangTest.test_getSectionUseSlugAndLang" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\SectionManagement\GetSectionUseSlugAndLangTest" file="$PROJECT_DIR$/backend/tests/SectionManagement/GetSectionUseSlugAndLangTest.php" method="test_getSectionUseSlugAndLang" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="SectionServiceTest.test_getSectionUseSlugAndLang" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\SectionManagement\SectionServiceTest" file="$PROJECT_DIR$/backend/tests/SectionManagement/GetSectionUseSlugAndLangTest.php" method="test_getSectionUseSlugAndLang" scope="Method" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.GetBaseSectionsUseLang.test_getBaseSectionsUseLang (1)" />
+        <item itemvalue="PHPUnit.GetBaseSectionsUseLang.test_getBaseSectionsUseLang" />
+        <item itemvalue="PHPUnit.GetSectionUseSlugAndLangTest.test_getSectionUseSlugAndLang (1)" />
+        <item itemvalue="PHPUnit.GetSectionUseSlugAndLangTest.test_getSectionUseSlugAndLang" />
         <item itemvalue="PHPUnit.SectionServiceTest.test_getSectionUseSlugAndLang" />
       </list>
     </recent_temporary>
@@ -630,7 +654,9 @@
       <workItem from="1701162263065" duration="7578000" />
       <workItem from="1702453852256" duration="14655000" />
       <workItem from="1704885674332" duration="4000" />
-      <workItem from="1706086830676" duration="6366000" />
+      <workItem from="1706086830676" duration="8328000" />
+      <workItem from="1706162365990" duration="11025000" />
+      <workItem from="1706449693118" duration="2182000" />
     </task>
     <task id="LOCAL-00001" summary="code review">
       <created>1700984341634</created>
@@ -694,7 +720,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706098077933</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="rename GetSectionUseSlugAndLangTest">
+      <option name="closed" value="true" />
+      <created>1706098240516</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1706098240516</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -798,7 +832,8 @@
     <MESSAGE value="make functions: getBaseSectionsUseLang, setSectionPosition" />
     <MESSAGE value="create SectionDtoFactory&#10;&#10;create HeroSectionDto,BrickSectionDto,SimpleTextSectionDto&#10;&#10;create Localization Middleware" />
     <MESSAGE value="create SectionServiceTest&#10;create test_getSectionUseSlugAndLang function" />
-    <option name="LAST_COMMIT_MESSAGE" value="create SectionServiceTest&#10;create test_getSectionUseSlugAndLang function" />
+    <MESSAGE value="rename GetSectionUseSlugAndLangTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename GetSectionUseSlugAndLangTest" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/frontend/src/components/SimpleText.jsx">
